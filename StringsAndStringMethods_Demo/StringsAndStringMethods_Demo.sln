@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringsDemo_Sec3", "StringsDemo_Sec3.csproj", "{8AFB6DB4-901A-4252-8A83-40C1A9F383EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringsAndStringMethods_Demo", "StringsAndStringMethods_Demo.csproj", "{8AFB6DB4-901A-4252-8A83-40C1A9F383EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
