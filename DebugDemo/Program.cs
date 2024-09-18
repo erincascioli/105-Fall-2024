@@ -1,4 +1,4 @@
-﻿namespace DebuggingDemo
+﻿namespace DebugDemo
 {
     internal class Program
     {
