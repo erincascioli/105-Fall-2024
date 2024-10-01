@@ -173,6 +173,18 @@ namespace CompoundConditionals_Demo
                 }
             }
 
+            if ((equippedItem == "fishing rod") && isNearWater && fishingSkill >= 3)
+            {
+                Console.WriteLine("You cast your line into the water.");
+                Console.WriteLine("The line tugs as the huge bass tries to swim away!");
+            }
+            else if ((equippedItem == "fishing rod") && isNearWater)
+            {
+                Console.WriteLine("You cast your line into the water.");
+                Console.WriteLine("Nothing bites. Better luck next time!");
+            }
+            
+
             // ********************************************
             // Enough gold and familiar with merchant
             if ((playerGold >= 100) ||
