@@ -9,6 +9,77 @@ namespace Arrays_Demo
     {
         static void Main(string[] args)
         {
+            int[] birthdaysInMonths = new int[12];
+            birthdaysInMonths[0] = 1;
+            birthdaysInMonths[1] = 0;
+            birthdaysInMonths[2] = 3;
+            birthdaysInMonths[3] = 1;
+            birthdaysInMonths[4] = 5;
+            birthdaysInMonths[5] = 2;
+            birthdaysInMonths[6] = 4;
+            birthdaysInMonths[7] = 1;
+            birthdaysInMonths[8] = 3;
+            birthdaysInMonths[9] = 1;
+            birthdaysInMonths[10] = 5;
+            birthdaysInMonths[11] = 2;
+            Console.WriteLine(birthdaysInMonths.Length);
+
+            int[] birthdaysInMonthsLiteral = {1, 0, 3, 1, 5, 2, 4, 1, 3, 1, 5, 2};
+
+            string[] characterNames = {"Sleeve McDichael", "Freddy Krueger", "Keith"};
+
+            // Print all values to the Console window
+            for (int i = 0; i < characterNames.Length; i++)
+            {
+                Console.WriteLine(characterNames[i]);
+            }
+
+
+
+            // Get user-provided values. Declare only!
+            string[] userProvidedNames;
+
+            // How many names?
+            Console.Write("How many? ");
+            int arraySize = int.Parse(Console.ReadLine()!);
+
+            // Initialize array to the correct size
+            userProvidedNames = new string[arraySize];
+
+            // Enter the names
+            for(int i = 0; i < userProvidedNames.Length; i++)
+            {
+                Console.Write("Enter name: ");
+                userProvidedNames[i] = Console.ReadLine()!;
+            }
+            
+            // At this point, the array contains X names with
+            // all data provided by the user.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            /*
             // ----------------------------------------------------------------
             // Arrays 1-dimensional
             // ----------------------------------------------------------------
@@ -82,6 +153,7 @@ namespace Arrays_Demo
                 // Print the data at this element
                 Console.WriteLine(" --> " + characterNames[i]);
             }
+            */
         }
     }
 }
