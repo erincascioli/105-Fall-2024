@@ -72,7 +72,7 @@ namespace Enumerations_Demo
             {
                 if(i % 3 == 1)
                 {
-                    newClassName += (bestClassAsString[i]).ToString().ToUpper();
+                    newClassName += bestClassAsString[i].ToString().ToUpper();
                 }
                 else
                 {
