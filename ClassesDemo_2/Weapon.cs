@@ -8,7 +8,9 @@ namespace ClassesDemo_2
 {
     internal class Weapon
     {
-        // FIELDS
+        // --------------------------------------------------------------------
+        // FIELDS of the Weapon class
+        // --------------------------------------------------------------------
         public int damage;
         public string name;
         public int durability;
@@ -16,6 +18,9 @@ namespace ClassesDemo_2
         public string[] materials;
 
 
+        // --------------------------------------------------------------------
+        // CONSTRUCTOR(S) of this class
+        // --------------------------------------------------------------------
         /// <summary>
         /// Default constructor - assigns default values to all fields of this class
         /// </summary>
@@ -29,13 +34,13 @@ namespace ClassesDemo_2
         }
 
         /// <summary>
-        /// 
+        /// Constructs an object of the Weapon class
         /// </summary>
-        /// <param name="damage"></param>
-        /// <param name="name"></param>
-        /// <param name="durability"></param>
-        /// <param name="maxDurability"></param>
-        /// <param name="materials"></param>
+        /// <param name="damage">Damage dealt upon blow</param>
+        /// <param name="name">Name of the weapon</param>
+        /// <param name="durability">Current durability</param>
+        /// <param name="maxDurability">Maximum durability</param>
+        /// <param name="materials">Materials the weapon is constructed from</param>
         public Weapon(int damage, string name, int durability, 
             int maxDurability, string[] materials)
         {
@@ -46,6 +51,8 @@ namespace ClassesDemo_2
             this.materials = materials;
         }
 
+
+        // This is another way of identifying parameters.
         /*
         public Weapon(int p_damage, string p_name, int p_durability, 
         int p_maxDurability, string[] p_materials)
