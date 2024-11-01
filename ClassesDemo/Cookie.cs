@@ -8,12 +8,19 @@ namespace ClassesDemo
 {
     internal class Cookie
     {
+        // --------------------------------------------------------------------
+        // Fields
+        // --------------------------------------------------------------------
         public string flavor;
         public double price;
         public double diameter;
         public bool glutenFree;
         public string[] toppings;
 
+
+        // --------------------------------------------------------------------
+        // Constructor(s)
+        // --------------------------------------------------------------------
 
         /// <summary>
         /// Default constructor
@@ -64,6 +71,8 @@ namespace ClassesDemo
             this.toppings = toppings;
         }
 
+        // Students may also use differently named parameters! 
+        // One strategy is to use p_ in front of all parameters.
         /*
         public Cookie(string p_flavor, double p_price, double p_diameter,
             bool p_glutenFree, string[] p_toppings)
@@ -74,6 +83,20 @@ namespace ClassesDemo
             diameter = p_diameter;
             glutenFree = p_glutenFree;
             toppings = p_toppings;
+        }
+        */
+
+        // Or use completely separately named identifiers!
+        /*
+        public Cookie(string cookieFlavor, double cookiePrice, double cookieDiameter,
+            bool cookieGlutenFree, string[] cookieToppings)
+        {
+            // FIELD = PARAMETER;
+            flavor = cookieFlavor;
+            price = cookiePrice;
+            diameter = cookieDiameter;
+            glutenFree = cookieGlutenFree;
+            toppings = cookieToppings;
         }
         */
     }
