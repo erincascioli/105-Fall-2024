@@ -21,7 +21,7 @@ namespace ClassMethods_Warmup
         // --------------------------------------------------------------------
         public string name;
         public int currentHealth;
-        public const int maxHealth = 100;
+        public int maxHealth;
         public Weapon enemyWeapon;
         public string[] heldItems;
 
@@ -31,7 +31,7 @@ namespace ClassMethods_Warmup
         // --------------------------------------------------------------------
         
         /// <summary>
-        /// Constructs an object of the Enemy class with defauly data for the max health,
+        /// Constructs an object of the Enemy class with default data for the max health,
         /// items held, and weapon.
         /// </summary>
         /// <param name="name">Name of the enemy</param>
@@ -40,26 +40,8 @@ namespace ClassMethods_Warmup
         {
             this.name = name;
             this.currentHealth = currentHealth;
-            SetDefaultFields();
-        }
+            maxHealth = 100;
 
-        /// <summary>
-        /// Constructs an Enemy object has default data for the current health, max health
-        /// items held, and the weapon.
-        /// </summary>
-        /// <param name="name">Name of the enemy</param>
-        public Enemy(string name)
-        {
-            this.name = name;
-            currentHealth = 86;
-            SetDefaultFields();
-        }
-
-        /// <summary>
-        /// Inits the weapon and items held fields.
-        /// </summary>
-        public void SetDefaultFields()
-        {
             // Weapon type is dependent on the name length
             int nameLength = name.Length;
 
@@ -78,6 +60,8 @@ namespace ClassMethods_Warmup
 
             // All enemies start with the same 3 items
             heldItems = new string[3] { "rations", "trinket", "trap" };
+
+
         }
 
 
@@ -85,64 +69,46 @@ namespace ClassMethods_Warmup
         // METHODS of the class
         // --------------------------------------------------------------------
 
+
         /// <summary>
-        /// 
+        /// Displays information for this given Enemy in the Console window.
         /// </summary>
         public void Print()
         {
-            Console.WriteLine($"The enemy {name} has {currentHealth}/{maxHealth} health");
-            Console.WriteLine($"Holding a(n) {enemyWeapon}.");
-            Console.Write("This enemy holds: ");
+            Console.WriteLine($"This enemy {name} has {currentHealth}/{maxHealth} health.");
+            Console.WriteLine($"Weapon: {enemyWeapon}");
+            Console.Write($"Is holding ");
+            
             for(int i = 0; i < heldItems.Length; i++)
             {
                 Console.Write(heldItems[i] + " ");
             }
-            Console.WriteLine();
 
-            //foreach(string item in heldItems)
-            //{
-            //    Console.Write(item + " ");
-            //}
+            foreach(string item in heldItems)
+            {
+                Console.Write(item + " ");
+            }
+
+            Console.WriteLine();
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
+        public void TakeDamage(int damageDealt)
+        {
+            if(damageDealt > 0)
+            {
+                currentHealth -= damageDealt;
+            }
+        }
+
         public int Attack()
         {
-            int damage = 0;
-
-            switch(enemyWeapon)
-            {
-                case Weapon.Axe:    damage = 10; break;
-                case Weapon.Dagger: damage = 7;  break;
-                case Weapon.Sword:  damage = 12; break;
-            }
-
-            return damage;
+            // Make this more interesting!
+            return 5;
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="incomingDamage"></param>
-        public void TakeDamage(int incomingDamage)
-        {
-            // Harm this enemy by the incoming damage HP amount
-            currentHealth -= incomingDamage;
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
         public void Heal()
         {
-            // "Healthy" enough to heal at or above 50% of maximum
-            if (currentHealth > maxHealth * .5)
-            {
-                currentHealth = maxHealth;
-            }
+            // Make this interesting!
         }
     }
 }
