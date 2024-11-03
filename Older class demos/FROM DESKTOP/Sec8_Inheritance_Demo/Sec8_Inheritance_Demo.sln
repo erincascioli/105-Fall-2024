@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sec8_Inheritance_Demo", "Sec8_Inheritance_Demo.csproj", "{F330A1E7-DA7A-4B80-8BAE-12EF875C0646}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F330A1E7-DA7A-4B80-8BAE-12EF875C0646}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F330A1E7-DA7A-4B80-8BAE-12EF875C0646}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F330A1E7-DA7A-4B80-8BAE-12EF875C0646}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F330A1E7-DA7A-4B80-8BAE-12EF875C0646}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF6B7D8C-CA70-42EE-BBD4-B1A173845925}
+	EndGlobalSection
+EndGlobal

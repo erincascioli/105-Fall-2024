@@ -1,0 +1,8 @@
+Fire|4|Frost|3
+Inferno:100
+Blaze:100
+Ember:100
+Scorch:100
+Wynter:105
+Glacier:105
+Snowy:105
